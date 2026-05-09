@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Instalar no iPhone | Guia Passo a Passo</title>
+    <meta name="description" content="Aprenda como adicionar nosso site à tela inicial do seu iPhone (iOS).">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="container">
+        <!-- iOS Guide (Now the main content) -->
+        <div id="ios-guide" class="card" style="display: block;">
+            <h1>Instalar no iPhone</h1>
+            <p class="subtitle">Siga os passos abaixo para usar o site como um aplicativo no seu iOS.</p>
+            
+            <!-- Step 1 -->
+            <div id="ios-step-1" class="step active">
+                <div class="step-number">1</div>
+                <h3>Toque em Compartilhar</h3>
+                <p class="subtitle">Na barra inferior do Safari, toque no ícone de compartilhamento.</p>
+                <div class="instruction-img">
+                    <i data-lucide="share" class="icon-share" style="width: 64px; height: 64px;"></i>
+                </div>
+                <div class="btn-nav">
+                    <button class="primary-btn" onclick="nextStep(1)">Próximo Passo</button>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div id="ios-step-2" class="step">
+                <div class="step-number">2</div>
+                <h3>Adicionar à Tela de Início</h3>
+                <p class="subtitle">Role a lista para baixo e toque nesta opção.</p>
+                <div class="instruction-img">
+                    <i data-lucide="plus-square" style="width: 64px; height: 64px;"></i>
+                </div>
+                <div class="btn-nav">
+                    <button class="secondary-btn" onclick="prevStep(2)">Voltar</button>
+                    <button class="primary-btn" onclick="nextStep(2)">Próximo Passo</button>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div id="ios-step-3" class="step">
+                <div class="step-number">3</div>
+                <h3>Confirmar</h3>
+                <p class="subtitle">No canto superior direito, toque em <b style="color: #007aff;">Adicionar</b>.</p>
+                <div class="instruction-img">
+                    <div style="background: rgba(255,255,255,0.05); padding: 15px 30px; border-radius: 12px; font-weight: 700; color: #007aff; font-size: 1.4rem; border: 1px solid rgba(0,122,255,0.3);">
+                        Adicionar
+                    </div>
+                </div>
+                <div class="btn-nav">
+                    <button class="secondary-btn" onclick="prevStep(3)">Voltar</button>
+                    <button class="primary-btn" onclick="location.href='../index.html'">Finalizar</button>
+                </div>
+            </div>
+            
+            <a href="../index.html" class="back-link">Voltar para o site</a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
